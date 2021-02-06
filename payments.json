@@ -1,0 +1,64 @@
+{
+  "weekly": [
+    {
+      "name": "rent",
+      "code": "rent",
+      "amount": 210.0,
+      "frequency": "weekly",
+      "day": 4
+    },
+    {
+      "name": "bills",
+      "code": "rent",
+      "amount": 40.0,
+      "frequency": "weekly",
+      "day": 4
+    }
+  ],
+  "fortnightly": [
+    {
+      "name": "Flying Loan",
+      "code": "debt",
+      "amount": 200,
+      "frequency": "fortnightly",
+      "day": 4
+    }
+  ],
+  "monthly": [
+    {
+      "name": "Extreme Edge Membership",
+      "code": "leisure",
+      "amount": 99,
+      "frequency": "monthly",
+      "day": 1
+    },
+    {
+      "name": "Contents Insurance",
+      "code": "bills",
+      "amount": 48.29,
+      "frequency": "monthly",
+      "day": 1
+    },
+    {
+      "name": "Car Insurance",
+      "code": "bills",
+      "amount": 62.01,
+      "frequency": "monthly",
+      "day": 15
+    },
+    {
+      "name": "Phone Bill",
+      "code": "bills",
+      "amount": 72.50,
+      "frequency": "monthly",
+      "day": 29
+    },
+    {
+      "name": "MS Game Pass",
+      "code": "leisure",
+      "amount": 12.95,
+      "frequency": "monthly",
+      "day": 4
+    }
+  ]
+}
