@@ -8,7 +8,7 @@ namespace SilverspyCLI
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("------| Silverspy CLI |------");
+            Console.WriteLine("-------------------| Silverspy  CLI |-------------------");
             
             const string configPath = @"/Users/matt.c/payments.json";
             var start = DateTime.Parse("2021-02-18");
@@ -19,7 +19,15 @@ namespace SilverspyCLI
 
             var period = financialPeriodGenerator.Generate(start, end);
 
-            Console.WriteLine(period);
+            Console.WriteLine($" PAY PERIOD: {period.Start} to {period.End}");
+            Console.WriteLine(new string('-', 56));
+            Console.WriteLine($" - TOTAL OUTGOINGS: {period.TotalOutgoings}");
+            Console.WriteLine(" - PAYMENTS:");
+            foreach (var payment in period.Payments)
+            {
+                Console.WriteLine($"\t{payment.Date.ToString().Substring(0,10)} - {payment.Name}");
+                Console.WriteLine($"\t\t${payment.Amount}");
+            }
         }
     }
 }

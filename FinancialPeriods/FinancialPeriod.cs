@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using SilverspyCLI.Models;
 
 namespace SilverspyCLI.FinancialPeriods
@@ -9,7 +10,7 @@ namespace SilverspyCLI.FinancialPeriods
         public readonly DateTime Start;
         public readonly DateTime End; 
         public List<PaymentDate> Payments { get; }
-        public decimal TotalOutgoings => 999.00m;
+        public double TotalOutgoings => Payments.Select(p => p.Amount).Sum();
 
         public FinancialPeriod(DateTime start, DateTime end, List<PaymentDate> payments)
         {
