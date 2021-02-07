@@ -6,6 +6,7 @@ namespace SilverspyCLI.Models
 {
     public class Payment
     {
+        public string Type { get; set; }
         public string Name { get; set; }
         public string Code { get; set; }
         public string Frequency { get; set; }
@@ -22,6 +23,7 @@ namespace SilverspyCLI.Models
             {
                 var paymentDate = new PaymentDate()
                 {
+                    Type = this.Type,
                     Name = this.Name,
                     Code = this.Code,
                     Amount = this.Amount,
